@@ -1,0 +1,38 @@
+{
+  "name": "genpark-tree-structured-synthetic-curriculum-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Tree-structured synthetic curriculum synthesizer generating domain-specific textbook chapters and verification questions.",
+  "author": "genpark",
+  "category": "synthetic-data",
+  "tags": [
+    "cosmopedia",
+    "synthetic-data",
+    "curriculum-learning",
+    "textbook-synthesizer",
+    "dataset-generation"
+  ],
+  "inputs": {
+    "domain_subject": {
+      "type": "string"
+    },
+    "target_token_volume_millions": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "curriculum_job_id": {
+      "type": "string"
+    },
+    "textbook_chapters_generated": {
+      "type": "integer"
+    },
+    "pedagogical_depth_score_pct": {
+      "type": "number"
+    },
+    "synthetic_dataset_jsonl_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
